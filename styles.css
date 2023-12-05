@@ -1,12 +1,24 @@
-* {
+body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  padding: 0;
+  min-height: 100dvh;
 }
 
 header, 
-footer,
-#container-1 {
+footer {
   background-color: #1F2937;
+  display: flex;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+}
+
+header, 
+.container {
+  padding: 16px 64px;
 }
 
 h1 {
@@ -22,6 +34,9 @@ h3 {
 
 button {
   background-color: #3882F6;
+  color: #F9FAF8;
+  border-radius: 8px;
+  padding: 6px 30px;
 }
 
 a {
@@ -32,10 +47,25 @@ ul {
   list-style: none;
 }
 
-#left-content-text, 
+#left-content-text,
+footer, 
 a {
   font-size: 18px;
   color: #E5E7EB;
+}
+
+#header-left {
+  margin-right: auto;
+}
+
+#header-right {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+#container-1 {
+  background-color: #1F2937;
 }
 
 #container-3 {
@@ -49,6 +79,11 @@ a {
   color: #1F2937;
 }
 
-.cta-content {
+.call-to-action {
   background-color: #3882F6;
+  padding: 24px 48px;
+}
+
+.call-to-action > button {
+  border: 2px solid #E5E7EB;
 }
