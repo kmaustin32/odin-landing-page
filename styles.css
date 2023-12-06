@@ -9,6 +9,7 @@ header,
 footer {
   background-color: #1F2937;
   display: flex;
+  padding: 0px 64px;
 }
 
 footer {
@@ -16,7 +17,6 @@ footer {
   align-items: center;
 }
 
-header, 
 .container {
   padding: 16px 64px;
 }
@@ -25,6 +25,7 @@ h1 {
   font-size: 48px;
   font-weight: bolder;
   color: #F9FAF8;
+  margin: 0;
 }
 
 h3 {
@@ -37,6 +38,7 @@ button {
   color: #F9FAF8;
   border-radius: 8px;
   padding: 6px 30px;
+  align-self: flex-start;
 }
 
 a {
@@ -66,17 +68,59 @@ a {
 
 #container-1 {
   background-color: #1F2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.container-1-child {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-1-child > p {
+  padding-right: 40px;
+}
+
+#container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px 200px;
+}
+
+.container-2-text {
+  text-align: center;
+  width: 100%;
 }
 
 #container-3 {
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 400px;
 }
 
-#container-3 > p {
+#quote {
   font-size: 36px;
   font-style: italic;
   font-weight: lighter;
   color: #1F2937;
+  margin: 0;
+}
+
+#person {
+  text-align: end;
+  margin: 0;
+}
+
+#left-content-text {
+  margin: 0;
 }
 
 .call-to-action {
@@ -86,4 +130,11 @@ a {
 
 .call-to-action > button {
   border: 2px solid #E5E7EB;
+}
+
+.items {
+  height: 200px;
+  width: 200px;
+  border: 2px solid #3882F6;
+  border-radius: 8px;
 }
