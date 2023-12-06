@@ -9,7 +9,7 @@ header,
 footer {
   background-color: #1F2937;
   display: flex;
-  padding: 0px 64px;
+  padding: 0 360px;
 }
 
 footer {
@@ -18,7 +18,7 @@ footer {
 }
 
 .container {
-  padding: 16px 64px;
+  padding: 16px 360px;
 }
 
 h1 {
@@ -66,32 +66,43 @@ a {
   gap: 8px;
 }
 
+#container-1,
+#container-2, 
+#container-3,
+#container-4 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 #container-1 {
   background-color: #1F2937;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px;
+  flex-wrap: wrap;
 }
 
 .container-1-child {
-  width: 500px;
-  height: 250px;
+  height: 240px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex: 1;
 }
 
-.container-1-child > p {
-  padding-right: 40px;
+.container-1-child > * {
+  flex: 1;
+}
+
+.container-1-child > button {
+  flex: 0;
 }
 
 #container-2 {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
-  padding: 20px 200px;
 }
 
 .container-2-text {
@@ -103,7 +114,6 @@ a {
   background-color: #E5E7EB;
   display: flex;
   flex-direction: column;
-  padding: 100px 400px;
 }
 
 #quote {
@@ -117,6 +127,7 @@ a {
 #person {
   text-align: end;
   margin: 0;
+  font-weight: bold;
 }
 
 #left-content-text {
@@ -125,7 +136,9 @@ a {
 
 .call-to-action {
   background-color: #3882F6;
+  color:#E5E7EB;
   padding: 24px 48px;
+  border-radius: 8px;
 }
 
 .call-to-action > button {
