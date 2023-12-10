@@ -137,15 +137,36 @@ a {
 .call-to-action {
   background-color: #3882F6;
   color:#E5E7EB;
-  padding: 24px 48px;
+  padding: 48px 48px;
   border-radius: 8px;
+  display: flex;
+  padding-left: 48px;
+  padding-right: 48px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .call-to-action > button {
   border: 2px solid #E5E7EB;
 }
 
+.cta-content {
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-content > * {
+  padding: 0;
+  margin: 0;
+}
+
 .items {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.items-block {
   height: 200px;
   width: 200px;
   border: 2px solid #3882F6;
